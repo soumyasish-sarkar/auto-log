@@ -4,11 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Status</title>
+  <style>
+    /* Adding Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    /* Styling the body */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Container for the content */
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px 40px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Status heading styling */
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Status display box */
+    #status {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-  <h3>Status:</h3>
-  <div id="status">Checking...</div>
-  
+  <div class="container">
+    <h3>Status:</h3>
+    <div id="status">Checking...</div>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
