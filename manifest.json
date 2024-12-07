@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "College Internet Auto Login",
+    "description": "Automatically login to the college internet portal.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://122.252.242.93/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "wifi.png"
+    }
+  }
+  
