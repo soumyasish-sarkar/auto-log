@@ -28,8 +28,8 @@ function automateLogin() {
       const submitButton = document.querySelector("input[type='submit']");
   
       if (usernameField && passwordField && submitButton) {
-        usernameField.value = '8509626893';
-        passwordField.value = 'soumyawf22';
+        usernameField.value = '8509xxxxxx';
+        passwordField.value = 'password';
         submitButton.click();
       }
     }
